@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --principal-pink: #D658B3;
+  --principal-green: #45B442;
+  --gray-700: #332B31;
+  --gray-600: #4A4448;
+  --gray-500: #756C71;
+  --gray-400: #D3CFD2;
+  --gray-300: #DFDCDF;
+  --gray-200: #E9E7E9;
+  --gray-100: #F4F1F2;
+  --white: #FFFFFF;
+
+  /* --linear-gradient: (90deg, #2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%) */
+
+  --text: #000000;
+  --highlights: #000000;
+  --background: #fafafa;
+
+  --ff-base: "Oxygen", sans-serif;
+
+  --text-xs: 400 0.75rem/1.4 var(--ff-base);
+  --text-sm: 400 0.875rem/1.4 var(--ff-base);
+  --text-md: 400 1rem/1.4 var(--ff-base);
+
+  --subtitle-md: 700 0.875rem/1.4 var(--ff-base);
+  --subtitle-sm: 700 0.75rem/1.4 var(--ff-base);
+
+  --title-md: 700 1.5rem/1.4 var(--ff-base);
+  --title-sm: 700 0.75rem/1.4 var(--ff-base);
+}
+
+body {
+  background-color: var(--gray-200);
+}
