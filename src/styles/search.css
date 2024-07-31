@@ -50,6 +50,10 @@
       cursor: not-allowed;
     }
 
+    &:hover {
+      background-color: var(--gray-600);
+    }
+
     & img {
       width: 1.25rem;
       heigth: 1.25rem;
@@ -58,7 +62,8 @@
 }
 
 .search-active {
-  border: 1.5px solid var(--principal-pink)
+  border: 1.5px solid var(--principal-pink);
+  color: var(--gray-700);
 }
 
 /* desktop */
