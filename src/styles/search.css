@@ -67,7 +67,7 @@
 }
 
 /* desktop */
-@media (width >= 80em) {
+@media (width >= 57em) {
   .search {
     width: 25rem;
   }

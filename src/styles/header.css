@@ -11,7 +11,7 @@ header {
 }
 
 /* desktop */
-@media (width >= 80em) {
+@media (width >= 57em) {
   header {
     margin-top: 4rem;
   

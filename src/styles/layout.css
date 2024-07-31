@@ -2,10 +2,46 @@
   margin: 0 0.75rem;
 }
 
+main {
+  display: grid;
+  grid-template-areas: 
+    "user"
+    "card"
+    "progress"
+    "history";
+  grid-row-gap: 0.5rem;
+
+  & section.user {
+    grid-area: user;
+  }
+
+  & section.history {
+    grid-area: history;
+  }
+
+  & section.card {
+    grid-area: card;
+  }
+
+  & section.progress {
+    grid-area: progress;
+  }
+}
+
 /* desktop */
-@media (width >= 80em) {
+@media (width >= 57em) {
   .content {
     max-width: 57rem;
     margin: 0 auto;
   }
+
+  main {
+    grid-template-areas: 
+      "user card"
+      "history card "
+      "history card"
+      "history progress";
+    grid-template-columns: 20rem 1fr;
+    column-gap: 1.5rem;
+  }  
 }
