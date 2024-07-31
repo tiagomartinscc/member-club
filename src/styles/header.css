@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+
+  & img {
+    width: 6.21rem
+  }
+}
+
+/* desktop */
+@media (width >= 80em) {
+  header {
+    margin-top: 4rem;
+  
+    & img {
+      width: 7.25rem
+    }
+  }
+}

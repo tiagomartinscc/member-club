@@ -1,0 +1,11 @@
+.content {
+  margin: 0 0.75rem;
+}
+
+/* desktop */
+@media (width >= 80em) {
+  .content {
+    max-width: 57rem;
+    margin: 0 auto;
+  }
+}
