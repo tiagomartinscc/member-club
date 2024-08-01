@@ -3,6 +3,7 @@
 }
 
 main {
+  margin-top: 1.25rem;
   display: grid;
   grid-template-areas: 
     "user"
@@ -36,6 +37,7 @@ main {
   }
 
   main {
+    margin-top: 4rem;
     grid-template-areas: 
       "user card"
       "history card "

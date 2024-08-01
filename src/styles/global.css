@@ -18,8 +18,11 @@
   --gray-100: #F4F1F2;
   --white: #FFFFFF;
 
-  /* --linear-gradient: (90deg, #2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%) */
-
+  --linear-gradient: linear-gradient(90deg, #2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%);
+  --linear-gradient2: linear-gradient(-45deg, #2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%);
+  --conic-gradient: conic-gradient(#2DAA6E, #2DAAAA, #856CCF, #D658B3);
+  --radial-gradient: radial-gradient(circle at center, #2DAA6E 25%, #2DAAAA 50%, #856CCF 75%, #D658B3 100%);
+  
   --text: #000000;
   --highlights: #000000;
   --background: #fafafa;
