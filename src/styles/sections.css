@@ -193,9 +193,7 @@ section.card {
 
       border-radius: 0.78588rem;
       background: var(--gray-200);
-      /* backdrop-filter: blur(3.143620014190674px); */
-
-
+ 
       & img {
         width: 2.5rem;
         height: 2.5rem;
@@ -229,6 +227,22 @@ section.card {
       & div:nth-child(1) {
         height: 2rem;
         padding: 0rem 0.75rem;
+      }
+    }
+
+    & section.slots {
+      gap: 1rem;
+      width: 100%;
+
+      & div {
+        width: 5.48rem;
+        height: 5.48rem;
+        padding: 0.75rem;
+
+        & img {
+          width: 4rem;
+          height: 4rem;
+        }
       }
     }
   }
