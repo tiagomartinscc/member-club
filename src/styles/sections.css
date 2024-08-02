@@ -244,6 +244,16 @@ section.card {
           height: 4rem;
         }
       }
+
+      // fix size to gift item
+      & div:nth-child(10) {
+        padding: 1.5rem;
+
+        & img {
+          width: 2.5rem;
+          height: 2.5rem;         
+        }
+      }
     }
   }
 }
