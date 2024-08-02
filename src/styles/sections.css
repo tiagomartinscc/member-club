@@ -119,6 +119,92 @@ section.history {
   }
 }
 
+section.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 1.25rem;
+  padding: 1.5rem 1.25rem 1.25rem 1.25rem;
+
+  border-radius: 1rem;
+  border: 1px solid var(--gray-300);
+  background: var(--gray-100);
+
+  & header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+
+    & div:nth-child(1) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.25rem;
+      flex: 1 0 0;
+
+      & h3 {
+        color: var(--gray-500);
+        font: var(--subtitle-sm);
+        text-transform: uppercase;
+      }
+      & span {
+        color: var(--gray-500);
+        font: var(--text-xs);
+      }
+    }
+    /* ID */
+    & div:nth-child(2) {
+      color: var(--gray-500);
+      font: var(--subtitle-sm);
+      text-transform: uppercase;
+
+      display: flex;
+      height: 1.5rem;
+      padding: 0rem 0.5rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+
+      border-radius: 62.4375rem;
+      background: var(--gray-300);
+    }
+  }
+
+  & section.slots {
+    display: flex;
+    width: 19.5rem;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    
+    & div{
+      display: flex;
+      width: 3.5rem;
+      height: 3.5rem;
+      padding: 0.5rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+
+      border-radius: 0.78588rem;
+      background: var(--gray-200);
+      /* backdrop-filter: blur(3.143620014190674px); */
+
+
+      & img {
+        width: 2.5rem;
+        height: 2.5rem;
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+
 /* desktop */
 @media (width >= 57em) {
   section.history {
@@ -128,5 +214,22 @@ section.history {
 
   & div.history-list {
     overflow-y: auto;
+  }
+
+  section.card {
+    padding: 2.25rem 2rem 2rem 2rem;
+    gap: 2rem;
+
+    & header {
+      gap: 0.25rem;
+      
+      & div:nth-child(1) {
+      }
+
+      & div:nth-child(1) {
+        height: 2rem;
+        padding: 0rem 0.75rem;
+      }
+    }
   }
 }

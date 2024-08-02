@@ -43,3 +43,7 @@
 body {
   background-color: var(--gray-200);
 }
+
+.opacity {
+  opacity: 0.35;
+}
