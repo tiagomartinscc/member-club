@@ -203,6 +203,80 @@ section.card {
   }
 }
 
+section.progress {
+  display: flex;
+  padding: 1rem 1.25rem;
+
+  align-items: center;
+  gap: 1.5rem;
+  align-self: stretch;
+
+  border-radius: 1rem;
+  border: 1px solid var(--gray-300);
+  background: var(--gray-100);
+
+  & div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 0.25rem;
+    flex: 1 0 0;
+
+    & p {
+      color: var(--gray-500);
+      font: var(--text-sm);
+      & strong {
+        color: var(--gray-600);
+        font: var(--title-sm);
+      }
+    }
+
+    & div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.75rem;
+
+      & div {
+        display: flex;
+        padding-right: 6.73125rem;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 0.5rem;
+        flex: 1 0 0;
+        border-radius: 62.9375rem;
+        background: var(--gray-300);  
+      }
+      & span {
+        color: var(--gray-500);
+        font: var(--text-xs);
+      }
+    }
+
+  }
+  & figure {
+    display: flex;
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 48.5625rem;
+    background: var(--gray-200);
+
+    & img {
+      width: 2.5rem;
+      height: 2.5rem;
+      flex-shrink: 0;
+
+      filter: drop-shadow(0px 1.25px 2.5px rgba(0, 0, 0, 0.08)) drop-shadow(0px 3.75px 3.75px rgba(0, 0, 0, 0.07)) drop-shadow(0px 9.375px 5.625px rgba(0, 0, 0, 0.04)) drop-shadow(0px 16.25px 6.25px rgba(0, 0, 0, 0.01)) drop-shadow(0px 25px 6.875px rgba(0, 0, 0, 0.00));
+    }
+  }
+}
+
 /* desktop */
 @media (width >= 57em) {
   section.history {
@@ -255,5 +329,9 @@ section.card {
         }
       }
     }
+  }
+
+  section.progress {
+
   }
 }
