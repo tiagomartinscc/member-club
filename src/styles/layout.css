@@ -33,10 +33,7 @@ main {
 @media (width >= 57em) {
   .content {
     max-width: 57rem;
-    /* margin: 0 auto; */
-    margin: 0 auto 10.15rem auto;
-    /* margin 0 0.75rem 10.13rem 0.75rem; */
-
+    margin: 0 auto 3rem auto;
   }
 
   main {

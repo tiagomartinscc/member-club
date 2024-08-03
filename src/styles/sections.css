@@ -208,21 +208,30 @@ section.progress {
   padding: 1rem 1.25rem;
 
   align-items: center;
+  justify-content: center;
   gap: 1.5rem;
-  align-self: stretch;
 
   border-radius: 1rem;
   border: 1px solid var(--gray-300);
   background: var(--gray-100);
 
-  & div {
+  /* div that separates the progress bar from the gift icon */
+  & > div {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: flex-start;
     gap: 0.25rem;
-    flex: 1 0 0;
+    width: 100%;
 
+    /* div that contains the progress bar and counter */
+    & > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    /*  */
     & p {
       color: var(--gray-500);
       font: var(--text-sm);
@@ -232,22 +241,32 @@ section.progress {
       }
     }
 
-    & div {
+    /* progress and counter */
+    & > div {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       gap: 0.75rem;
 
-      & div {
+      /* background progress */
+      & > div {
         display: flex;
-        padding-right: 6.73125rem;
-        flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: flex-start;
         gap: 0.5rem;
-        flex: 1 0 0;
         border-radius: 62.9375rem;
-        background: var(--gray-300);  
+        background: var(--gray-300);
+        flex: 1;
+        height: 1rem;
+        
+        /* status bar complete */
+        & > span {
+          background: var(--linear-gradient);
+          border-radius: 62.9375rem;
+          width: 70%;
+          height: 1rem;
+          display: block;
+        }
       }
       & span {
         color: var(--gray-500);
@@ -308,7 +327,7 @@ section.progress {
       gap: 1rem;
       width: 100%;
 
-      & div {
+      & > div {
         width: 5.48rem;
         height: 5.48rem;
         padding: 0.75rem;
@@ -320,7 +339,7 @@ section.progress {
       }
 
       // fix size to gift item
-      & div:nth-child(10) {
+      & > div:nth-child(10) {
         padding: 1.5rem;
 
         & img {
@@ -332,6 +351,14 @@ section.progress {
   }
 
   section.progress {
+    padding: 2rem;
+    gap: 2rem;
 
+    & div p {
+      font: var(--text-md);
+      & strong {
+        font: var(--title-md);
+      }
+    }
   }
 }
