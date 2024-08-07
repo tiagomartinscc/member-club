@@ -16,12 +16,14 @@
     <header>
       <img src="assets/logo.svg" alt="logo member club">
 
-      <div class="search">
-        <input type="text" placeholder="ID do cartão">
-        <button type="submit">
-          <img src="assets/icons/arrow-elbow-down-left.svg" alt="">
-        </button>
-      </div>
+      <form action="" method="GET">
+        <div class="search">
+          <input type="text" placeholder="ID do cartão">
+          <button type="submit">
+            <img src="assets/icons/arrow-elbow-down-left.svg" alt="">
+          </button>
+        </div>
+      </form>
     </header>
     
     <main>
@@ -30,8 +32,8 @@
           <img src="../src/assets/photos/example.png" alt="picture user profile" />
         </figure>
         <div>
-          <h2>Natália Miranda</h2>
-          <span>Cliente desde 18/09/2023</span>
+          <h2 id="name"></h2>
+          <span id="client-since"></span>
         </div>
       </section>
 
@@ -142,12 +144,15 @@
             <h3>Cartão Fidelidade</h3>
             <span>Ao fazer cortes de cabelo, o décimo sai de graça!</span>
           </div>
-          <div>
-            ID: 124-537-835-230
+          <div id="id">
+            
           </div>
         </header>
         <section class="slots">
-          <div>
+          <!-- <div>
+            <img src="assets/icons/pin-check.png" alt="selo de confirmação de corte de cabelo">
+          </div> -->
+          <!-- <div>
             <img src="assets/icons/pin-check.png" alt="selo de confirmação de corte de cabelo">
           </div>
           <div>
@@ -166,15 +171,12 @@
             <img src="assets/icons/pin-check.png" alt="selo de confirmação de corte de cabelo">
           </div>
           <div>
-            <img src="assets/icons/pin-check.png" alt="selo de confirmação de corte de cabelo">
           </div>
           <div>
-          </div>
-          <div>
-          </div>
-          <div>
+          </div> -->
+          <!-- <div>
             <img class="opacity" src="assets/icons/gift.svg" alt="meta a ser alcançada">
-          </div>
+          </div> -->
         </section>
       </section>
 
@@ -186,9 +188,9 @@
   
           <div>
             <div>
-              <span data-percentage="70"></span>
+              <span id="progress-bar"></span>
             </div>
-            <span>7 de 10</span>
+            <span id="totals">7 de 10</span>
           </div>
         </div>
         <figure>
@@ -198,6 +200,6 @@
     </main>
   </div>
 
-  <script src="./scripts/search.js"></script>
+  <script type="module" src="./scripts/search.js"></script>
 </body>
 </html>

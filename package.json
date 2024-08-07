@@ -1,0 +1,15 @@
+{
+  "name": "cartao-fidelidade",
+  "version": "1.0.0",
+  "description": "<img src=\"./template.svg\" alt=\"template do projeto\"/>",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch src/data/db.json --port=3333"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.1"
+  }
+}
