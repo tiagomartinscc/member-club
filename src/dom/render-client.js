@@ -1,9 +1,14 @@
+const modal = document.querySelector('dialog')
+const buttonModal = document.querySelector('dialog button')
+buttonModal.onclick = function () {
+  modal.close()
+}
+
 export function renderClient(client) {
   const name = document.getElementById('name')
   const clientSince = document.getElementById('client-since')
   const id = document.getElementById('id')
   const appointmentHistory = document.querySelector('.history')
-
 
   name.innerHTML = client.name
   clientSince.innerHTML = `cliente desde ${client.clientSince}`
@@ -58,6 +63,11 @@ function createCards({totalCuts, cutsNeeded, cutsRemaining}) {
   const totalsElement = document.querySelector('#totals')
   totalsElement.innerHTML = `${totalCuts} de ${cutsNeeded}`
 
+  // modal
+  if (totalCuts === cutsNeeded) {
+    modal.showModal()
+  }
+
   // percentage
   const progressBarElement = document.getElementById('progress-bar')
   const percentage = Math.floor(Number(totalCuts) / Number(cutsNeeded) * 100)
@@ -88,17 +98,4 @@ function createCards({totalCuts, cutsNeeded, cutsRemaining}) {
       }
     }
   }
-
-  // cards
-  // <div>
-  //   <img src="assets/icons/pin-check.png" alt="selo de confirmação de corte de cabelo">
-  // </div>
-
-  // loyaltyCard
-//  "loyaltyCard": {
-//"totalCuts": 7,
-//"cutsNeeded": 10,
-//"cutsRemaining": 3
-//}
-
 }

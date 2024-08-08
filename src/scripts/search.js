@@ -32,7 +32,6 @@ form.addEventListener("submit", async (event) => {
     const id = input.value
     const client = await fetchClientById({id})
     renderClient(client)
-    console.log('client', client)
   } catch (error) {
     console.log(error)
     alert(error.message)
